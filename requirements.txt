@@ -6,10 +6,12 @@ charset-normalizer==2.0.12
 cryptography==37.0.1
 cssselect2==0.6.0
 defusedxml==0.7.1
+dj-database-url==0.5.0
 Django==3.1.5
 django-allauth==0.50.0
 django-disqus==0.5
 fonttools==4.33.3
+gunicorn==20.1.0
 html5lib==1.1
 idna==3.3
 mock==4.0.3
@@ -35,5 +37,6 @@ urllib3==1.26.9
 weasyprint==55.0
 webencodings==0.5.1
 wheel==0.37.1
+whitenoise==6.1.0
 wincertstore==0.2
 zopfli==0.2.1
