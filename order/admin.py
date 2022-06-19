@@ -5,7 +5,7 @@ import csv
 import datetime
 from django.http import HttpResponse
 
-def export_to_csv (modeladmin, request, queryset):
+def export_to_csv(modeladmin, request, queryset):
     opts = modeladmin.model._meta
     response = HttpResponse(content_type='text/csv')
     response['Content-Disposition'] = 'attachment;filename={}.csv'.format(opts.verbose_name)
@@ -34,12 +34,12 @@ from django.urls import reverse
 from django.utils.safestring import mark_safe
 
 def order_detail(obj):
-    return mark_safe('<a href="{}">Detail</a>'.format(reverse('orders: admin_order_detail',
+    return mark_safe('<a href="{}">Detail</a>'.format(reverse('orders:admin_order_detail',
                                                               args=[obj.id])))
 order_detail.short_description = 'Detail'
 
 def order_pdf(obj):
-    return mark_safe('<a href="{}">PDF</a>'.format(reverse('orders: admin_order_pdf',
+    return mark_safe('<a href="{}">PDF</a>'.format(reverse('orders:admin_order_pdf',
                                                            args=[obj.id])))
 
 order_pdf.short_description = 'PDF'
