@@ -8,7 +8,7 @@
     <h1>Django onlineshop</h1>
     <p>
         Invoice no. {{order.id}} </br>
-        <span class="secondary">{{ordere.created date:"M d, Y"}}</span>
+        <span class="secondary">{{ordere.created|date:"M d, Y"}}</span>
     </p>
 
 <h3>{% if order.paid %}Payment Accepted {% else %}Pending payment {% endif %}</h3>

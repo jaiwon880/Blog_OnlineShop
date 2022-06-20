@@ -5,8 +5,12 @@ Order {{order.id}}
 
 {% block breadcrumbs %}
 <div class="breadcrumbs">
-<a href="{% url 'admin:index' %}">Home</a> &rsaquo; <a href="{% url 'admin:order_order_changelist' %}">Orders</a> &rsaquo; <a href="{% url 'admin:order_order_change' order.id %}">Order {{order.id}}</a> &rsaquo;
-Detail </div> {% endblock %}
+    <a href="{% url 'admin:index' %}">Home</a> &rsaquo;
+    <a href="{% url 'admin:order_order_changelist' %}">Orders</a> &rsaquo;
+    <a href="{% url 'admin:order_order_change' order.id %}">Order {{order.id}}</a> &rsaquo;
+    Detail
+</div>
+{% endblock %}
 
 {% block content %}
 <h1>Order {{order.id}}</h1>

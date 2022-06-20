@@ -27,6 +27,7 @@ def export_to_csv(modeladmin, request, queryset):
             data_row.append(value)
         writer.writerow(data_row)
     return response
+
 export_to_csv.short_description = 'Export to CSV'
 
 
@@ -46,7 +47,7 @@ order_pdf.short_description = 'PDF'
 
 from .models import OrderItem, Order
 
-class OrderItemInline (admin. TabularInline):
+class OrderItemInline(admin.TabularInline):
     model = OrderItem
     raw_id_fields = ['product']
 
