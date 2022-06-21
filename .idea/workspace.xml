@@ -5,30 +5,7 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="8b697e9e-97d0-46d1-bf72-4bb130f9a31a" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/blog/forms.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/blog/static/blog/boot320.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/blog/static/blog/style.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/blog/templates/blog/base.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/blog/templates/blog/post_detail.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/blog/templates/blog/post_edit.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/blog/templates/blog/post_list.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/blog/urls.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/notice/urls.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/shop/decorators.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/shop/forms.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/shop/templates/shop/profile.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/shop/templates/shop/profile_delete.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/static/css/style.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/templates/notice/notice_detail.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/templates/notice/notice_list.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/config/settings.py" beforeDir="false" afterPath="$PROJECT_DIR$/config/settings.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/config/urls.py" beforeDir="false" afterPath="$PROJECT_DIR$/config/urls.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/shop/templates/shop/detail.html" beforeDir="false" afterPath="$PROJECT_DIR$/shop/templates/shop/detail.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/shop/templates/shop/list.html" beforeDir="false" afterPath="$PROJECT_DIR$/shop/templates/shop/list.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/shop/urls.py" beforeDir="false" afterPath="$PROJECT_DIR$/shop/urls.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/shop/views.py" beforeDir="false" afterPath="$PROJECT_DIR$/shop/views.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/templates/base.html" beforeDir="false" afterPath="$PROJECT_DIR$/templates/base.html" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -125,7 +102,7 @@
       <workItem from="1655767011980" duration="3666000" />
       <workItem from="1655771862395" duration="6109000" />
       <workItem from="1655785567983" duration="361000" />
-      <workItem from="1655786136080" duration="3575000" />
+      <workItem from="1655786136080" duration="4272000" />
     </task>
     <servers />
   </component>
