@@ -2,6 +2,7 @@
 {% block title %}Product Detail{% endblock %}
 {% block content %}
 
+<br><br>
 <div class="container">
     <div class="row">
         <div class="col-4">
@@ -22,5 +23,16 @@
         </div>
     </div>
 </div>
+
+<br><br>
+<div class="row">
+    <div class="col-md-2"></div>
+        <div class="col-md-8 panel panel-default">
+            {% load disqus_tags %}
+            {% disqus_show_comments %}
+        </div>
+    <div class="col-md-2"></div>
+</div>
+
 
 {% endblock %}

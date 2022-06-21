@@ -1,0 +1,35 @@
+{% extends 'base.html' %}
+{% block title %}- Profile{% endblock %}
+{% block content %}
+
+<div class="container" style="width: 50%">
+    <div style="margin-top: 1rem !important;">
+        <div class="col-12">
+                <div class="card">
+                    <div class="card-header" style="padding-bottom:8px;">
+                        <strong style="font-size: 18px"><i class="fas fa-user-cog"></i>&nbsp;&nbsp;내 정보</strong>
+                    </div>
+                    <div class="card-body">
+                        <table style="color:black; margin-left:10px;">
+                            <tr>
+                                <td>아이디 </td>
+                                <td><div style="margin-left: 1rem !important;">{{ user.username }}</div></td>
+                            </tr>
+                            <tr>
+                                <td>이메일</td>
+                                <td><div style="margin-left: 1rem !important;">{{ user.email }}</div></td>
+                            </tr>
+                        </table>
+                        <hr>
+                        <div style="text-align: center;">
+                        <!-- <div style="margin-left: 10px;"> -->
+                            <a href="{% url 'shop:profile_delete' %}" style="color:#d14040f2; font-size:15px;"><i class="fas fa-user-slash"></i>&nbsp;회원탈퇴</a> <br>
+                        </div>
+                    </div>
+                </div>
+        </div>
+    </div>
+</div>
+
+
+<br>{% endblock %}

@@ -1,0 +1,35 @@
+{% extends 'base.html' %}
+{% block title %}- Notice_detail{% endblock %}
+
+{% block content %}
+<br><br><br>
+<div class="container">
+    <div class="row-mt-5">
+        <div class="col-12">
+            <!--본문-->
+            <div class="card" style="width: 100%;">
+                <!--제목,분류,작성일-->
+                <div class="card-header">
+                    <strong style="font-size: 18px;">{{ notice.title }}</strong>&nbsp;&nbsp;
+                    <span style="font-size: 18px; color: gray;">[공지사항]</span>
+                    <span style="float:right;">{{ notice.registered_date|date:'Y.m.d. H:i' }}</span>
+                    <button class="btn btn-sm" id="detail_btn" onclick="location.href='/notice/'">목록으로</button>
+                </div>
+                <div class="card-body" style="min-height: 400px; color:black;">
+                    <!--작성자, 조회수-->
+                    <div>
+                        <span><i class="fas fa-user-edit"></i>&nbsp;작성자 : {{ notice.writer }}</span>
+                    </div>
+                    <hr>
+                    <!--내용-->
+                    <div>
+                        {{ notice.content | safe }}
+
+                    </div>
+                </div>
+            </div>
+            <br>
+        </div>
+    </div>
+</div>
+{% endblock %}

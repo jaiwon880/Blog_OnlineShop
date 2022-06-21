@@ -13,6 +13,11 @@ https://docs.djangoproject.com/en/3.1/ref/settings/
 import dj_database_url
 from pathlib import Path
 
+import sys
+sys.modules['django.utils.six.moves.urllib.parse']=__import__('six.moves.urllib_parse', fromlist=['urlencode'])
+sys.modules['django.utils.six.moves.urllib.request']=__import__('six.moves.urllib_request', fromlist=['urlopen'])
+
+
 # import pymysql
 # pymysql.install_as_MySQLdb()
 
@@ -51,7 +56,9 @@ INSTALLED_APPS = [
     'cart',
     'coupon',
     'order',
-
+    'disqus',
+    'notice.apps.NoticeConfig',
+    'blog',
 ]
 
 MIDDLEWARE = [
@@ -165,6 +172,8 @@ AUTHENTICATION_BACKENDS = (
 )
 
 EMAIL_BACKEND = 'django.core.mail.backends.console.EmailBackend'
+
+DISQUS_WEBSITE_SHORTNAME = 'dstagram-jaiwon'
 
 SITE_ID = 1
 LOGIN_REDIRECT_URL = '/'
